@@ -1,0 +1,42 @@
+{
+  "name": "nik_project",
+  "version": "1.0.0",
+  "description": "This project is a cloud-based real-time collaboration platform that allows multiple users and AI to work together on the same document in a secure, structured, and intelligent manner. Unlike traditional document editors, this platform focuses on controlled collaboration, accountability, and role-based behavior.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "esbuild": "^0.27.2",
+    "serverless": "^3.40.0",
+    "serverless-esbuild": "^1.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "^6.13.2",
+    "@aws-sdk/client-apigatewaymanagementapi": "^3.980.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.980.0",
+    "@aws-sdk/client-dynamodb": "^3.980.0",
+    "@aws-sdk/util-dynamodb": "^3.980.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.24",
+    "aws-amplify": "^6.16.0",
+    "next": "^16.1.6",
+    "openai": "^6.17.0",
+    "postcss": "^8.5.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.1.18",
+    "uuid": "^13.0.0"
+  }
+}
