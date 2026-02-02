@@ -47,6 +47,20 @@ custom:
     concurrency: 10
 
 functions:
+  listDocuments:
+    handler: src/backend/listDocuments.handler
+    events:
+      - http:
+          path: documents
+          method: get
+          cors: true
+          authorizer:
+            name: UserPoolAuthorizer
+            type: COGNITO_USER_POOLS
+            arn:
+              Fn::GetAtt:
+                - CollabUserPool
+                - Arn
   createDocument:
     handler: src/backend/createDocument.handler
     events:
