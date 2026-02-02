@@ -45,6 +45,8 @@ custom:
     target: 'node18'
     platform: 'node'
     concurrency: 10
+    external:
+      - '@aws-sdk/*'
 
 functions:
   listDocuments:
